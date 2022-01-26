@@ -1,0 +1,24 @@
+.min-h-96{
+    min-height: 24rem;
+}
+
+.post-img{
+    object-fit: cover;
+}
+
+.counter{
+    background-color: #0000008f;
+}
+
+.comment-content{
+    margin-top: -0.5rem;
+}
+
+.other-comments{
+    height: 23rem;
+    overflow-y: scroll;
+}
+
+.dot{
+    margin-top: -1.3rem;
+}

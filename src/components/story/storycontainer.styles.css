@@ -1,0 +1,36 @@
+.stories{
+    min-width: 5rem;
+}
+
+.story{
+    min-width: 5rem;
+}
+
+.story-img{
+    min-height: 28rem;
+    height: 28rem !important;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    background-position: center !important;
+}
+
+.comment-input{
+    border-radius: 1rem;
+    padding: 3px;
+    padding-left: 6px;
+    height: 2.3rem;
+    width: 85%;
+    color: black;
+    border: 2px solid black;
+    outline: black;
+}
+
+.story-comment{
+    background-color: rgba(0, 0, 0, 0.637);
+    color: white;
+    text-align: center;
+}
+
+.story-beads{
+    background-color: #00000042;
+}

@@ -1,0 +1,35 @@
+.animation-ping {
+  animation-name: ping;
+  animation-duration: .4s;
+  animation-iteration-count: 1;
+}
+
+.animation-bounce {
+  animation-name: bounce;
+  animation-duration: .4s;
+  animation-iteration-count: 1;
+}
+
+@keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+
+  50% {
+    transform: translateY(-14%);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+
+  10% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
