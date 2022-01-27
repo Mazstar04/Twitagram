@@ -21,8 +21,8 @@ const PostImages = ({ post }) => {
 
     return (
 
-        <>
-            <div className="relative top-10 left-80 text-md font-bold p-1 text-center text-white counter rounded-xl w-14">
+        <div className="relative">
+            <div className="absolute top-10 right-10 text-md font-bold p-1 text-center text-white counter rounded-xl w-14">
 
                 <span>{`${activeIndex} / ${post.imagePaths.length}`}</span>
             </div>
@@ -44,7 +44,7 @@ const PostImages = ({ post }) => {
                     return <i onClick={() => { goTo(index + 1) }} key={Math.floor(Math.random() * 100)} className={`fas fa-circle mr-1 ${activeIndex == index + 1 ? "text-blue-700 text-s relative bottom-0.5" : "text-white text-xs"}`}></i>;
                 })}
             </div>
-        </>
+        </div>
     );
 }
 
