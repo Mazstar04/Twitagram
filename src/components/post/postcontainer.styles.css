@@ -22,3 +22,31 @@
 .dot{
     margin-top: -1.3rem;
 }
+
+.laptopPostContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-top: -20px;
+}
+
+.text-xss {
+    font-size: 0.7rem/* 14px */;
+    line-height: 1.25rem/* 20px */;
+}
+
+.no-post{
+    height: 28rem;
+    width: 20rem;
+    margin-left: 25rem;
+    margin-top: 15rem;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.76);
+}
+
+.postDH{
+    height: 60%;
+    min-height: 60%;
+    max-height: 60%;
+
+}

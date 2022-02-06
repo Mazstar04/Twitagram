@@ -45,7 +45,7 @@ const PostCommentContainer = ({ data, toggle }) => {
 
             const newComment = {
                 id: Math.floor(Math.random() * 300),
-                userName: "bobrisky",
+                userName: "nengiofficial",
                 content: comment,
                 profilePath: "https://source.unsplash.com/random",
                 date: new Date(),
@@ -89,7 +89,8 @@ const PostCommentContainer = ({ data, toggle }) => {
                         </div>
                     </div>
                     <div className="other-comments">
-                        {data.comments.sort((a, b) => new Date(a.date) - new Date(b.date))
+                        {data.comments
+                            .sort((a, b) => new Date(a.date) - new Date(b.date))
                             .map(c =>
                                 <PostComment changeReplyCommentId={changeReplyCommentId} comment={c} hourDiff={hourDiff} key={Math.floor(Math.random() * 300)} />
                             )}
@@ -97,7 +98,7 @@ const PostCommentContainer = ({ data, toggle }) => {
 
                 </div>
                 <div className="comment-div p-3 w-full absolute flex bottom-5 font-bold">
-                    <input onChange={(e) => commenting(e)} type="text" className="comment-input flex-1" placeholder={commentPlaceHolder} value={commentValue} />
+                    <textarea input onChange={(e) => commenting(e)} type="text" className="comment-input flex-1" placeholder={commentPlaceHolder} value={commentValue}></textarea>
                     <i className="far fa-paper-plane border-3 px-3 mt-2 text-2xl hover:text-gray-400" onClick={addcomment}></i>
                 </div>
             </>

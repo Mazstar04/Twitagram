@@ -1,0 +1,50 @@
+.text-xxs{
+    font-size: 0.3rem;
+}
+
+.faint-black{
+    color: rgba(0, 0, 0, 0.611);
+}
+
+.mini-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.overflow-y-scroll::-webkit-scrollbar{
+    /* width: 0; */
+}
+
+.fn-con{
+    margin-right: 0.5rem;
+}
+
+
+/* CSS */
+.button-76 {
+  background-color: #cf245f;
+  background-image: linear-gradient(to bottom right, #fcd34d, #ef4444, #ec4899);
+  border: 0;
+  border-radius: .25rem;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  line-height: 1.75rem; /* 28px */
+  padding: .5rem;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-76:hover {
+  box-shadow: none;
+}
+
+@media (min-width: 1024px) {
+  .button-76 {
+    font-size: 1rem; /* 24px */
+    padding: .4rem .6rem;
+  }
+}

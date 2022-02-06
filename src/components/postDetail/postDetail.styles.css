@@ -1,0 +1,15 @@
+.comment::-webkit-scrollbar{
+    width: .2rem;
+    cursor: pointer;
+}
+
+.comment::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+
+.comment::-webkit-scrollbar-thumb{
+    background-color: darkgrey;
+    border: 1px solid slategrey;
+    outline: 1px solid slategrey;
+
+}
